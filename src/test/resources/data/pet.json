@@ -1,0 +1,18 @@
+{
+  "id": 2022000001,
+  "category": {
+    "id": 2,
+    "name": "Hulk"
+  },
+  "name": "Dogaomic",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 2,
+      "name": "Tag"
+    }
+  ],
+  "status": "available"
+}
