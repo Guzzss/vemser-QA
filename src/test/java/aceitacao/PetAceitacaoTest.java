@@ -1,7 +1,7 @@
 package aceitacao;
 
-import aceitacao.dto.DeleteDTO;
 import aceitacao.dto.TagsDTO;
+import aceitacao.dto.UserResponseDTO;
 import org.testng.Assert;
 import aceitacao.dto.PetPayloadDTO;
 import aceitacao.service.PetService;
@@ -78,7 +78,7 @@ public class PetAceitacaoTest {
 
         Integer idPet = 2022000001;
 
-        DeleteDTO resultService = petService.deletePet(idPet);
+        UserResponseDTO resultService = petService.deletePet(idPet);
 
         Assert.assertEquals(resultService.getCode(), "200");
         Assert.assertEquals(resultService.getType(), "unknown");

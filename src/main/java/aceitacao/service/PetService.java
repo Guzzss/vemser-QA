@@ -1,6 +1,6 @@
 package aceitacao.service;
 
-import aceitacao.dto.DeleteDTO;
+import aceitacao.dto.UserResponseDTO;
 import io.restassured.http.ContentType;
 import aceitacao.dto.PetPayloadDTO;
 
@@ -60,7 +60,7 @@ public class PetService {
         return result;
     }
 
-    public DeleteDTO deletePet(Integer idPet) {
+    public UserResponseDTO deletePet(Integer idPet) {
 
         String getUrl = baseUrl + "/" + idPet;
 
@@ -73,6 +73,6 @@ public class PetService {
                 .log()
                 .all()
                 .statusCode(200)
-                .extract().as(DeleteDTO.class);
+                .extract().as(UserResponseDTO.class);
     }
 }
